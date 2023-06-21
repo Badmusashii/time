@@ -1,0 +1,45 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.horloge {
+  position: relative;
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  align-items: center;
+  /* justify-content: center; */
+}
+.hour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9.5rem;
+  height: 0.005rem;
+  border: 1.5px solid black;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+.minutes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8rem;
+  height: 0.005rem;
+  border: 1px solid green;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
+.seconds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8rem;
+  height: 0.005rem;
+  border: 1px solid red;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+}
